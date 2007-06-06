@@ -6,7 +6,7 @@ module ActiveRecord
       scoped_order = scope[:order] if scope
       
       order = connection.random_function if order == :random
-      scoped_order = connecction.random_function if scoped_order == :random
+      scoped_order = connection.random_function if scoped_order == :random
       
       if order
         sql << " ORDER BY #{order}"
