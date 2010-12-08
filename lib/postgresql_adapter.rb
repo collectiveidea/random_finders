@@ -1,6 +1,6 @@
 module ActiveRecord
   module ConnectionAdapters 
-    class PostgresqlAdapter < AbstractAdapter
+    class PostgreSQLAdapter < AbstractAdapter
       
       def random_function
         'random()'
